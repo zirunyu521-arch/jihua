@@ -4,6 +4,7 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  COREPACK_ENABLE = "0"
 
 [[redirects]]
   from = "/*"
