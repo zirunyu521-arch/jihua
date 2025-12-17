@@ -4,6 +4,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist'  // 关键：移除 /static
+    outDir: 'dist',
+    rollupOptions: {
+      external: []  // 明确指定无外部依赖
+    }
   }
 })
