@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "@/pages/Home";
+import Home from "./pages/Home";
 import { useState } from "react";
 import { AuthContext } from '@/contexts/authContext';
 
