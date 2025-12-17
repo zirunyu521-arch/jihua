@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build:client"
+  command = "npm install && npm run build:client && ls -la dist"
   publish = "dist"
 
 [build.environment]
