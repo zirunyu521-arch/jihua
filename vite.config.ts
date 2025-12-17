@@ -1,16 +1,9 @@
-/** WARNING: DON'T EDIT THIS FILE */
-/** WARNING: DON'T EDIT THIS FILE */
-/** WARNING: DON'T EDIT THIS FILE */
-
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import tsconfigPaths from "vite-tsconfig-paths";
-
-function getPlugins() {
-  const plugins = [react(), tsconfigPaths()];
-  return plugins;
-}
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: getPlugins(),
-});
+  plugins: [react()],
+  build: {
+    outDir: 'dist'
+  }
+})
